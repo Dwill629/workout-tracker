@@ -13,3 +13,11 @@ const workoutSchema = new Schema(
     }
   }
 );
+
+workoutSchema.virtual('totalDuration').get(function () {
+  const duration = this.exercises.reduce((acc, cur) => {
+    return acc + cur.duration;
+  }, 0);
+
+  return duration;
+});
