@@ -11,3 +11,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
   useCreateIndex: true,
   useFindAndModify: false
 });
+
+// Starts the server
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
+});
