@@ -1,5 +1,7 @@
 # workout-tracker
 
+link to deployed application: https://devs-workout-tracker.herokuapp.com/
+
 This application is a workout tracker. Created with Mongo database with Mongoose schema and handle routes with express. See the user story below with what a user will be able to do.
 
 ![workout-tracker](images/workouttracker.gif)
